@@ -57,3 +57,34 @@
 % ========================================
 
 \RequirePackage[\option@Language]{babel}
+
+
+% ========================================
+% Title page
+% ========================================
+
+\AtBeginDocument{
+    \frontmatter
+    \pagestyle{empty}
+    \pagenumbering{gobble}
+
+    %
+    % Title page
+    %
+    \begin{titlepage}
+        \centering
+    \end{titlepage}
+    \cleardoublepage
+
+    %
+    % Table of contents
+    %
+    \pagenumbering{roman}
+    \tableofcontents
+    \cleardoublepage
+
+    %
+    % Content
+    %
+    \mainmatter
+}

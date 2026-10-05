@@ -98,7 +98,18 @@
 
 
 % ========================================
-% Title page
+% Bibliography
+% ========================================
+
+\usepackage[
+    backend = biber,
+    style = numeric-comp,
+    sorting = ynt
+]{biblatex}
+
+
+% ========================================
+% Begin and End
 % ========================================
 
 \RequirePackage{graphicx}
@@ -206,4 +217,9 @@
     %
     \mainmatter
     \pagestyle{style}
+}
+
+
+\AtEndDocument{
+    \printbibliography
 }

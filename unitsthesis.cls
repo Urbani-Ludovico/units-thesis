@@ -112,12 +112,16 @@
     %
     % Title page
     %
+    \newgeometry{
+        hmargin = 3cm,
+        vmargin = 2cm
+    }
     \begin{titlepage}
         \centering
         \fontsize{12}{16}\selectfont
 
         \includegraphics[
-            height = 2cm,
+            height = 3cm,
             width = \textwidth,
             keepaspectratio
         ]{./unitsthesis.images/departments/\option@DepartmentCode.pdf}\\[20pt]
@@ -165,6 +169,7 @@
 
         {\large Anno Accademico 2025/2026}
     \end{titlepage}
+    \restoregeometry
     \cleardoublepage
 
     %

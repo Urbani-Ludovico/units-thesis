@@ -18,7 +18,11 @@
 \DeclareStringOption{DepartmentCode}
 \DeclareStringOption[12pt]{FontSize}
 \DeclareStringOption[italian]{Language}
+\DeclareStringOption{SecondTeacher}
 \DeclareStringOption[twoside]{Side}
+\DeclareStringOption{Student}
+\DeclareStringOption{StudentID}
+\DeclareStringOption{Teacher}
 \DeclareStringOption{Title}
 \DeclareStringOption{Subtitle}
 
@@ -134,13 +138,28 @@
 
         \vfill
 
-        \begin{tblr}{
-            width = \textwidth,
-            colspec = { X[c] X[c] }
-        }
-            {\textbf{Laureando} \\[5pt] Ludovico Urbani \\ SM3201372} &
-            {\textbf{Relatore} \\[5pt] Prof. Alberto d'Onofrio}
-        \end{tblr}
+        \begin{minipage}[t]{0.3\textwidth}
+            \centering
+            \textbf{Laureando}\\[5pt]
+            \option@Student
+            \ifx\option@StudentID\@empty
+            \else
+                \\
+                \option@StudentID
+            \fi
+        \end{minipage}
+        \hspace{0.3\textwidth}
+        \begin{minipage}[t]{0.3\textwidth}
+            \centering
+            \textbf{Relatore}\\[5pt]
+            \option@Teacher
+            \ifx\option@SecondTeacher\@empty
+            \else
+                \\[10pt]
+                \textbf{Correlatore}\\[5pt]
+                \option@SecondTeacher
+            \fi
+        \end{minipage}
 
         \vfill
 

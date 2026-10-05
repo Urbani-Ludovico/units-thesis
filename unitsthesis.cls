@@ -14,6 +14,7 @@
 }
 
 \DeclareStringOption[12pt]{FontSize}
+\DeclareStringOption[italian]{Language}
 
 \ProcessKeyvalOptions*
 
@@ -47,3 +48,10 @@
 
 \RequirePackage{fontspec}
 \setmainfont{Latin Modern Roman}
+
+
+% ========================================
+% Babel
+% ========================================
+
+\RequirePackage[\option@Language]{babel}

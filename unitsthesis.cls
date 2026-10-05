@@ -153,6 +153,28 @@
     \tableofcontents
     \cleardoublepage
 
+    \IfFileExists{\jobname.lot}{
+        \begingroup
+        \endlinechar=-1
+        \read\@inputcheck to \@tempa
+        \ifeof\@inputcheck\else
+            \listoftables
+            \cleardoublepage
+        \fi
+        \endgroup
+    }{}
+
+    \IfFileExists{\jobname.lof}{
+        \begingroup
+        \endlinechar=-1
+        \read\@inputcheck to \@tempa
+        \ifeof\@inputcheck\else
+            \listoffigures
+            \cleardoublepage
+        \fi
+        \endgroup
+    }{}
+
     %
     % Content
     %

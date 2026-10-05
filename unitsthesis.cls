@@ -35,7 +35,7 @@
 \RequirePackage{geometry}
 \geometry{
     a4paper,
-    margin = 0.3cm
+    margin = 3cm
 }
 
 \RequirePackage[utf8]{inputenc}

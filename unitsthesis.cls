@@ -15,6 +15,7 @@
 
 \DeclareStringOption[12pt]{FontSize}
 \DeclareStringOption[italian]{Language}
+\DeclareStringOption[twoside]{Side}
 
 \ProcessKeyvalOptions*
 
@@ -23,6 +24,7 @@
 % Class extension
 % ========================================
 
+\PassOptionsToClass{\option@Side}{book}
 \PassOptionsToClass{\option@FontSize}{book}
 
 \LoadClass[twoside]{book}

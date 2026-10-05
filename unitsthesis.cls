@@ -13,4 +13,15 @@
     prefix=option@
 }
 
+\DeclareStringOption[12pt]{FontSize}
+
 \ProcessKeyvalOptions*
+
+
+% ========================================
+% Class extension
+% ========================================
+
+\PassOptionsToClass{\option@FontSize}{book}
+
+\LoadClass[twoside]{book}

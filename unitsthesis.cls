@@ -25,3 +25,25 @@
 \PassOptionsToClass{\option@FontSize}{book}
 
 \LoadClass[twoside]{book}
+
+
+% ========================================
+% Page settings
+% ========================================
+
+\RequirePackage{geometry}
+\geometry{
+    a4paper,
+    margin = 0.3cm
+}
+
+\RequirePackage[utf8]{inputenc}
+\RequirePackage[T1]{fontenc}
+
+\RequirePackage[
+	skip = 10pt,
+	indent = 0pt
+]{parskip}
+
+\RequirePackage{fontspec}
+\setmainfont{Latin Modern Roman}

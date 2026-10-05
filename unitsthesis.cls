@@ -19,6 +19,8 @@
 \DeclareStringOption[12pt]{FontSize}
 \DeclareStringOption[italian]{Language}
 \DeclareStringOption[twoside]{Side}
+\DeclareStringOption{Title}
+\DeclareStringOption{Subtitle}
 
 \ProcessKeyvalOptions*
 
@@ -126,8 +128,8 @@
         \vfill
 
         \textbf{ 
-            {\LARGE Judo: Verso un Tatami più Sicuro}\\[10pt]
-            {\large Dinamica e Learning del Controllo a mezzo di un nuovo modello matematico}
+            {\LARGE \option@Title}\\[10pt]
+            {\large \option@Subtitle}
         }
 
         \vfill

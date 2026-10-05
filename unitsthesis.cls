@@ -13,6 +13,9 @@
     prefix=option@
 }
 
+\DeclareStringOption{Course}
+\DeclareStringOption{Department}
+\DeclareStringOption{DepartmentCode}
 \DeclareStringOption[12pt]{FontSize}
 \DeclareStringOption[italian]{Language}
 \DeclareStringOption[twoside]{Side}
@@ -51,6 +54,8 @@
 \RequirePackage{fontspec}
 \setmainfont{Latin Modern Roman}
 
+\RequirePackage{hyperref}
+
 
 % ========================================
 % Babel
@@ -63,6 +68,9 @@
 % Title page
 % ========================================
 
+\RequirePackage{graphicx}
+\RequirePackage{tabularray}
+
 \AtBeginDocument{
     \frontmatter
     \pagestyle{empty}
@@ -73,6 +81,41 @@
     %
     \begin{titlepage}
         \centering
+        \fontsize{12}{16}\selectfont
+
+        \includegraphics[
+            height = 2cm,
+            width = \textwidth,
+            keepaspectratio
+        ]{./unitsthesis.images/departments/\option@DepartmentCode.pdf}\\[20pt]
+        \textbf{\large UNIVERSITÀ DEGLI STUDI DI TRIESTE}
+        \vspace{20pt}
+        \hrule
+        \vspace{10pt}
+        \MakeUppercase{\option@Department}\\[10pt]
+        {\option@Course}\\[50pt]
+        {TESI DI LAUREA TRIENNALE}
+
+        \vfill
+
+        \textbf{ 
+            {\LARGE Judo: Verso un Tatami più Sicuro}\\[10pt]
+            {\large Dinamica e Learning del Controllo a mezzo di un nuovo modello matematico}
+        }
+
+        \vfill
+
+        \begin{tblr}{
+            width = \textwidth,
+            colspec = { X[c] X[c] }
+        }
+            {\textbf{Laureando} \\[5pt] Ludovico Urbani \\ SM3201372} &
+            {\textbf{Relatore} \\[5pt] Prof. Alberto d'Onofrio}
+        \end{tblr}
+
+        \vfill
+
+        {\large Anno Accademico 2025/2026}
     \end{titlepage}
     \cleardoublepage
 

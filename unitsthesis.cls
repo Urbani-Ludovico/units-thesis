@@ -40,7 +40,8 @@
 \RequirePackage{geometry}
 \geometry{
     a4paper,
-    margin = 3cm
+    margin = 3cm,
+    headheight = 15pt
 }
 
 \RequirePackage[utf8]{inputenc}
@@ -62,6 +63,32 @@
 % ========================================
 
 \RequirePackage[\option@Language]{babel}
+
+
+% ========================================
+% Fancy style
+% ========================================
+
+\RequirePackage{fancyhdr}
+
+\fancypagestyle{style}{%
+    \fancyhf{}%
+
+    % Even pages
+    \fancyhead[LE]{\thepage}%
+    \fancyhead[RE]{\nouppercase{\leftmark}}%
+
+    % Odd pages
+    \fancyhead[LO]{\nouppercase{\leftmark}}%
+    \fancyhead[RO]{\thepage}%
+
+    % Header
+    \renewcommand{\headrulewidth}{0.4pt}%
+
+    % Footer
+    \fancyfoot{}%
+    \renewcommand{\footrulewidth}{0pt}%
+}
 
 
 % ========================================
@@ -130,4 +157,5 @@
     % Content
     %
     \mainmatter
+    \pagestyle{style}
 }

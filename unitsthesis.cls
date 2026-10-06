@@ -36,7 +36,7 @@
 \PassOptionsToClass{\option@Side}{book}
 \PassOptionsToClass{\option@FontSize}{book}
 
-\LoadClass[twoside]{book}
+\LoadClass{book}
 
 
 % ========================================

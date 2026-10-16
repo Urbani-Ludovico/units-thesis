@@ -48,6 +48,20 @@ myclass:Subtitle#K
 
 
 % ========================================
+% Math
+% ========================================
+
+#include:amsmath
+#include:amssymb
+#include:dsfont
+#include:mathtools
+#include:array
+
+\argmax
+\argmin
+
+
+% ========================================
 % Begin and End
 % ========================================
 

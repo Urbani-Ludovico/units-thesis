@@ -109,6 +109,24 @@
 
 
 % ========================================
+% Math
+% ========================================
+
+\RequirePackage{amsmath}
+
+\RequirePackage{amssymb}
+\RequirePackage{dsfont} % mathds for digits
+
+\RequirePackage{mathtools}
+
+\RequirePackage{array}
+\renewcommand{\arraystretch}{1.5}
+
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+
+
+% ========================================
 % Begin and End
 % ========================================
 

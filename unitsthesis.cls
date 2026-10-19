@@ -48,7 +48,8 @@
     a4paper,
     hmargin = 3cm,
     vmargin = 4cm,
-    headsep = 1.5cm
+    headsep = 1.5cm,
+    headheight = 15pt
 }
 
 \RequirePackage[utf8]{inputenc}

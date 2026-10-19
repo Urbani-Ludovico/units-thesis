@@ -46,8 +46,9 @@
 \RequirePackage{geometry}
 \geometry{
     a4paper,
-    margin = 3cm,
-    headheight = 15pt
+    hmargin = 3cm,
+    vmargin = 4cm,
+    headsep = 1.5cm
 }
 
 \RequirePackage[utf8]{inputenc}

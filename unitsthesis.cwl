@@ -23,6 +23,7 @@ myclass:Subtitle#K
 #include:fontenc
 #include:parskip
 #include:fontspec
+#inlcude:xcolor
 #inlcude:hyperref
 
 

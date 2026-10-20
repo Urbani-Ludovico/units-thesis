@@ -63,6 +63,8 @@
 \RequirePackage{fontspec}
 \setmainfont{Latin Modern Roman}
 
+\RequirePackage{xcolor}
+
 \RequirePackage{hyperref}
 
 
